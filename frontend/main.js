@@ -8,7 +8,7 @@ const functionApi = 'https://getresumecounter1175.azurewebsites.net/api/GetResum
 
 const getVisitCount = () => {
     let count = 0;
-    fetch(localApi)
+    fetch(functionApi)
     .then(response => {
         return response.json()
     })
