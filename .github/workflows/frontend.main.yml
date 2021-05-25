@@ -22,7 +22,11 @@ jobs:
       with:
         azcliversion: 2.0.72
         inlineScript: |
+<<<<<<< HEAD
             az storage blob upload-batch --account-name resumestorage1175 -d '$web' -s frontend/
+=======
+            az storage blob upload-batch --account-name <STORAGE_ACCOUNT_NAME> -d '$web' -s frontend/
+>>>>>>> b696dc26d26e7326906a53f48e30eb32135fae16
     - name: Purge CDN endpoint
       uses: azure/CLI@v1
       with:
